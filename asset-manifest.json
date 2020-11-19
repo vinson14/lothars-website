@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lothars-website/static/css/main.3b6dd73f.chunk.css",
+    "main.js": "/lothars-website/static/js/main.4ae498d4.chunk.js",
+    "main.js.map": "/lothars-website/static/js/main.4ae498d4.chunk.js.map",
+    "runtime-main.js": "/lothars-website/static/js/runtime-main.0eb632e6.js",
+    "runtime-main.js.map": "/lothars-website/static/js/runtime-main.0eb632e6.js.map",
+    "static/js/2.0fd76652.chunk.js": "/lothars-website/static/js/2.0fd76652.chunk.js",
+    "static/js/2.0fd76652.chunk.js.map": "/lothars-website/static/js/2.0fd76652.chunk.js.map",
+    "static/js/3.cf0560ef.chunk.js": "/lothars-website/static/js/3.cf0560ef.chunk.js",
+    "static/js/3.cf0560ef.chunk.js.map": "/lothars-website/static/js/3.cf0560ef.chunk.js.map",
+    "index.html": "/lothars-website/index.html",
+    "static/css/main.3b6dd73f.chunk.css.map": "/lothars-website/static/css/main.3b6dd73f.chunk.css.map",
+    "static/js/2.0fd76652.chunk.js.LICENSE.txt": "/lothars-website/static/js/2.0fd76652.chunk.js.LICENSE.txt",
+    "static/media/background.3ef088b0.jpg": "/lothars-website/static/media/background.3ef088b0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0eb632e6.js",
+    "static/js/2.0fd76652.chunk.js",
+    "static/css/main.3b6dd73f.chunk.css",
+    "static/js/main.4ae498d4.chunk.js"
+  ]
+}
