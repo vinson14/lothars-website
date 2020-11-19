@@ -1,15 +1,32 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import bg from "./static/images/background.jpg";
+import background from "./static/images/background.jpg";
+import backgroundMobile from "./static/images/background-mobile.jpg";
 import GetData from "./GetData";
 
 function App() {
     // Hooks
     const [distance, setDistance] = useState("Loading...");
     const [addDistance, setAddDistance] = useState(false);
+    const [bg, setBg] = useState(background);
 
     // Setting background
     let style = { backgroundImage: `url(${bg})` };
+
+    // handle bg for window size
+    const handleWindowResize = () => {
+        if (window.innerWidth < 768) {
+            console.log(window.innerWidth)
+            setBg(backgroundMobile);
+        } else {
+            setBg(background);
+        }
+    };
+
+    // Event listener for window innerwidth
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowResize);
+    });
 
     // Use effect hooks
     useEffect(() => {
@@ -29,7 +46,7 @@ function App() {
                 getData.addDistance(addDistance);
             })
             .then((response) => setDistance(response))
-            .then(setAddDistance(""))
+            .then(setAddDistance(""));
     };
 
     const handleChange = (event) => {
