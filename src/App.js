@@ -16,7 +16,6 @@ function App() {
     // handle bg for window size
     const handleWindowResize = () => {
         if (window.innerWidth < 768) {
-            console.log(window.innerWidth)
             setBg(backgroundMobile);
         } else {
             setBg(background);
@@ -26,7 +25,12 @@ function App() {
     // Event listener for window innerwidth
     useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
-    });
+        if (window.innerWidth < 768) {
+            setBg(backgroundMobile);
+        } else {
+            setBg(background);
+        }
+    },[bg]);
 
     // Use effect hooks
     useEffect(() => {
