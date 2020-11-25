@@ -20,7 +20,7 @@ class GetData {
         rows.forEach((row) => {
             totalDistance += parseFloat(row.distance);
         });
-        return totalDistance;
+        return { totalDistance: totalDistance, rows: rows };
     };
 
     addDistance = async (distance) => {
